@@ -46,6 +46,7 @@
   margin-top: 3rem;
   margin-bottom: 2rem;
   padding: 4rem;
+  background-color: white;
 }
 
 .input{
@@ -63,4 +64,8 @@
   margin: 20px;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+body{
+  background-color: lightgray;
 }

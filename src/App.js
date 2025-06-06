@@ -7,12 +7,6 @@ import { WeatherContext } from './context/Weather';
 
 function App(){
   const weather=useContext(WeatherContext);
-  console.log(weather);
-
-  // useEffect(()=>{
-  //   weather.getCurrentLoc();
-  // });
-
   useEffect(()=>{
     weather.fetchCurr();
   },[]);
@@ -23,7 +17,7 @@ function App(){
       <Input />
       <Button onClick={weather.fetchData} value={"Search"}/>
       <Card />
-      <Button value={"Refresh"}/>
+      <Button onClick={weather.fetchCurr} value={"Refresh"}/>
     </div>
   );
 }
