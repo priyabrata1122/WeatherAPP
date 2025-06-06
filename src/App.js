@@ -4,6 +4,8 @@ import Card from './components/Card';
 import Input from './components/Input';
 import Button from './components/Button ';
 import { WeatherContext } from './context/Weather';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 
 function App(){
   const weather=useContext(WeatherContext);
@@ -18,6 +20,7 @@ function App(){
       <Button onClick={weather.fetchData} value={"Search"}/>
       <Card />
       <Button onClick={weather.fetchCurr} value={"Refresh"}/>
+      <SpeedInsights/>
     </div>
   );
 }
